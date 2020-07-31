@@ -1,0 +1,120 @@
+* { border: 0; padding: 0; margin: 0; box-sizing: border-box; }
+
+body{
+  color:white;
+  font-size: 18px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: auto 1fr ;}
+
+.mainNav{
+  background-color: orange;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+}
+
+#nav, #form{
+  margin: 20px 40px;
+}
+
+#aboutBanner{
+  background-color: purple;
+  color: white;
+  padding: 5px;
+  height: 770px;
+}
+.logoHeader{
+  margin-top: 100px;
+  text-align: center;
+}
+.title{
+  margin-top: 300px;
+  text-align: center;
+}
+.tagline{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.aboutContent{
+  color: white;
+  height: 1806px;
+}
+
+.history, .philosophy, .goals, .brewery, .team, .news{
+  height: 296px;
+  background-color: purple;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.name{
+  padding: 120px;
+}
+
+.signUp{
+  background-color: orange;
+  color: white;
+  height: 285px;
+  text-align: center;
+}
+
+.regist{
+  padding: 120px;
+}
+
+.mainFooter{
+  background-color: purple;
+  color:white;
+  padding:2em;
+  height: 150px;
+  margin-top: 5px;
+}
+
+footer h2{
+  text-align:center;
+}
+
+.hidden {
+  display: none;
+}
+
+ @media screen and (min-width: 48em) {
+   .aboutContent{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 5px;
+     height: 907px;
+   }
+    .goals, .brewery, .team, .news{
+     margin-top: 0px;
+     }
+     .team, .news{
+      margin-bottom: 5px;
+      }
+ }
+
+ @media screen and (min-width: 64em) {
+
+   .aboutContent{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 5px;
+     height: 607px;
+   }
+   .goals{
+     margin-top: 5px;
+   }
+
+
+
+
+ }
